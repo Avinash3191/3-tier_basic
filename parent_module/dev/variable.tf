@@ -1,3 +1,5 @@
+
+# variable "subscription_id" {}
 #RG
 variable "rg_name" {}
 variable "location" {}
@@ -91,20 +93,20 @@ variable "sql_zone_redundant" {
 # --------------------
 # Key Vault
 # --------------------
-variable "kv_name" {
-  description = "Key Vault name"
-  type        = string
-}
+# variable "kv_name" {
+#   description = "Key Vault name"
+#   type        = string
+# }
 
-variable "tenant_id" {
-  description = "Azure Tenant ID"
-  type        = string
-}
+# variable "tenant_id" {
+#   description = "Azure Tenant ID"
+#   type        = string
+# }
 
-variable "object_id" {
-  description = "Object ID for Key Vault access (user/service principal)"
-  type        = string
-}
+# variable "object_id" {
+#   description = "Object ID for Key Vault access (user/service principal)"
+#   type        = string
+# }
 
 # --------------------
 # VM Admin Passwords

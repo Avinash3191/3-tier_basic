@@ -6,6 +6,7 @@ resource "azurerm_linux_virtual_machine" "local-vm" {
   admin_username        = var.admin_username
   admin_password        = var.admin_password
   network_interface_ids = var.network_interface_ids
+  disable_password_authentication = false
 
   os_disk {
     caching              = var.caching              #"ReadWrite"
